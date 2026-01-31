@@ -13,21 +13,22 @@ A sophisticated 2D grid-based reinforcement learning environment designed for st
 - **Optional Pygame Rendering**: Beautiful 2D visualization (optional)
 - **Fully Modular**: Clean separation between game logic, environment wrapper, and visualization
 
-## Installation
-
-### Basic Installation
+## Installation with uv
 ```bash
-pip install gymnasium numpy
+
+#uv initialization
+uv init
+
+#create a venv for your project
+uv venv --python 3.12
+
+source .venv/bin/activate
 ```
 
-### With Pygame (for visualization)
-```bash
-pip install gymnasium numpy pygame
-```
 
 ### With Stable-Baselines3 (for training)
 ```bash
-pip install gymnasium numpy pygame stable-baselines3[extra]
+uv pip install gymnasium numpy pygame stable-baselines3
 ```
 
 ## Quick Start
